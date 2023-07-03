@@ -1,0 +1,427 @@
+body {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 95vw;
+    height: 100vh;
+    margin-left: 2%;
+    display: block;
+
+}
+
+.btn{
+    background-color: #0088cc;
+    color: #fff;
+    padding: 5px 8px;
+    border: 1px solid #0088cc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.btn:hover, .btn_modal:hover{
+    background-color: #fff;
+    color: #0088cc;
+
+}
+
+.btn2{
+    background-color: red;
+    color: #fff;
+    padding: 5px 8px;
+    border: 1px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.btn2:hover{
+    background-color: #fff;
+    color: red;
+
+}
+
+.btn3{
+    background-color: #0088cc;
+    color: #fff;
+    padding: 5px 8px;
+    border: 1px solid #0088cc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+#btn_cancelar{
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    width: auto;
+    height: 10vh;
+    background-color: #74a4f4;
+    align-items:center;
+    box-shadow: 0px 3px 4px grey;
+}
+
+#second_menu{
+    display: flex;
+    width: 91vw;
+    height: 5vh;
+    margin-left: 3.5%;
+}
+
+#compact_menu{
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+}
+
+#title1,#title2,#title3,#title4,#title5{
+    display: flex;
+    width: 18.1vw;
+    justify-content: center;
+    align-items:end;
+    font-weight: bold;
+    color: #696969;
+}
+
+
+#title{
+    align-items: center;
+    font-size: 30px;
+}
+
+#title:hover{
+    color: rgb(54, 54, 54);
+}
+
+.opcoes{
+    justify-content: center;
+}
+
+#content{
+    width: 92vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-left: 1.5%;
+}
+
+#column1,#column2,#column3,#column4,#column5{
+    display: flex;
+    flex-direction: column;
+    width: 17.2vw;
+    
+    background-color: #f4f4f4;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-right: 2;
+    padding-bottom: 1.2%;
+}
+
+#titles{
+    display: flex;
+}
+
+.card{
+    width: 12vw;
+    height: 25vh;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    background-color: white;
+    margin: 5% 1% 0% 1%;
+    transition: all 0.3s ease-out;
+    border-radius: 4%;
+    display: flex;
+}
+
+.cor_lateral{
+    width: 1vw;
+    height: 25vh;
+    border-radius: 14px 0px 0px 14px;
+    background-color: #79a5f1;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+   
+}
+
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    width: 10vw;
+}
+
+.card-title{
+    width: 10vw;
+    text-align: center;xt
+}
+
+.logo_card{
+    align-content: flex-end;
+    text-align: right;
+    max-height: 2.5vh;
+    max-width: 2.5vw;
+    
+}
+
+#logo_menu{
+    max-height: 5vh;
+    max-width: 5vw;
+}
+
+.space_menu{
+    width: 25%;
+    text-align: center;
+
+}
+
+.space_buttons_menu{
+    width: 11%;
+    text-align: center;
+}
+
+/* Modais */
+#modal, #modal2{
+    width: 35%;
+    height: 80%;
+    border: none;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border-radius: 1%;
+    text-align: center;
+}
+
+#modal_workspace{
+    width: 40%;
+    height: 90%;
+    border: none;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border-radius: 1%;
+    text-align: center;
+}
+
+#content_modal{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 14% 0% 14%;
+    font-size: 15px;
+    color: #696969;
+}
+
+#title_card{
+    color: #74a4f4;
+}
+
+#header_modal{
+    border-bottom: 1px solid #696969;
+}
+
+.espace_label{
+    display: flex;
+    margin-top: 7%;
+    padding: 5px;
+}
+
+#description_modal{
+    height: 10vh;
+}
+
+#close_modal, #create_card{
+    margin-top: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.selects{
+    display: flex;
+    width: 8vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select_modal{
+    border: 0.5px solid grey;
+    width: 100%;
+}
+
+.select_modal:hover{
+    background-color: #fcfcfc;
+}
+
+.selectModal{
+    height: 3vh;
+
+}
+
+#title_modal:focus{
+    border-color: #74a4f4;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn_modal{
+    background-color: #0088cc;
+    color: #fff;
+    padding: 8px 11px;
+    border: 1px solid #0088cc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+/* Card details */
+
+#main{
+    display: flex;
+    float: right;
+    margin-top: 1%;
+}
+
+#firts_content{
+    width: 55vw;
+    height: 80vh;
+   /* border: 1px solid red; */
+}
+
+#second_content{
+    display: flex;
+    width: 25vw;
+    height: 80vh;
+   /* border: 1px solid blue; */
+    flex-direction: row; /* row é padrão */
+    justify-content: center;
+}
+
+#title_details{
+    width: 55vw;
+    height: 5vh;
+    font-size: 25px;
+    border: none;
+}
+
+#text-span{
+    margin-top: 3%;
+    border-left: 5px solid #0088cc;
+
+}
+
+#textarea{
+    width: 55vw;
+    height: 60vh;
+    border: none;
+    text-align: left;
+    font-size: 1.5em;
+    padding-top: 2%;
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+}
+#menu_lateral{
+    margin-right: 2%;
+    margin-top: 10%;
+    width: 20vw;
+    height: 60vh;
+   /* border: 1px solid green; */
+    
+}
+
+fieldset, #delete{
+    margin-top: 5%;
+}
+
+.msg{
+    margin-top: 0;
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#author, #type, #size_task, #requester{
+    border: none;
+}
+
+#option_menu{
+    width: 15vw;
+    height: 5vh;
+   /* border: 1px solid yellow; */
+}
+
+select{
+    width: 5vw;
+    height: 4vh;
+    font-size: 15px;
+    color: #3f3e3e;
+}
+
+select{
+    background-color: transparent;
+}
+
+#option_menu:hover, #author:hover, #title_details:hover, #textarea:hover{
+    background-color: rgb(238, 237, 237);
+    border-radius: 5px;
+}
+
+#buttons{
+    margin-top: 7%;
+}
+
+#deletar{
+    margin-left: 70%;
+}
+
+#buttons{
+   /* border: 1px solid green; */
+    display:flex;
+}
+
+.btn_status{
+    background-color: white;
+    color: black;
+    
+    
+}
+
+.btn_status:hover{
+    color: black;
+}
+
+#status{
+    overflow: hidden;
+}
+
+#status{
+   /* border: 1px solid orange; */
+    width: 20vw;
+    height: 5vh;
+}
+
+#status_id{
+    width: 8vw;
+}
